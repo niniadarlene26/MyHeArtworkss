@@ -1,0 +1,485 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* ================= BODY ================= */
+
+body{
+    margin:0;
+    font-family:Verdana, Geneva, sans-serif;
+    background-image:url("bg.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ================= HEADER ================= */
+
+#header{
+    background:linear-gradient(
+        135deg,
+        #7A008A,
+        #B54CFF,
+        #FFC0CB
+    );
+    font-family:Times New Roman;
+    margin:15px;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+
+.logo{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+
+    position:absolute;
+    left:25px;
+    top:20px;
+}
+
+h2{
+    color:white;
+    font-family:Times New Roman;
+    font-size:42px;
+    margin:0;
+}
+
+h3{
+    font-family:Times New Roman;
+    color:#FFEFFF;
+    margin-top:5px;
+    font-weight:normal;
+}
+
+/* ================= NAVBAR ================= */
+
+#navbar ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    list-style:none;
+
+    margin:15px;
+    padding:15px;
+
+    background:rgba(122,0,138,.90);
+
+    border-radius:15px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+#navbar a{
+    color:white;
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+#navbar a:hover{
+    background:pink;
+    color:purple;
+}
+
+/* ================= PAGE SYSTEM ================= */
+
+.page{
+    display:none;
+}
+
+#home{
+    display:block;
+}
+
+/* ================= BANNER ================= */
+
+#welcomeBanner{
+    height:400px;
+
+    margin:20px;
+
+    border-radius:25px;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:60px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.35)
+    ),
+    url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.bannerText{
+    font-family: cursive;
+    font-size:100px;
+    
+}
+
+.bannerText h1{
+    color:white;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.bannerText p{
+    color:white;
+    font-family:Times New Roman;
+    font-size:22px;
+    line-height:1.6;
+}
+
+/* ================= CONTENT BOXES ================= */
+
+.main,
+.main2{
+    background:rgba(255,255,255,.95);
+
+    margin:20px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#7A008A;
+}
+
+/* ================= HOME ART CAROUSEL ================= */
+
+.artCarousel{
+    width:90%;
+    margin:30px auto;
+
+    overflow-x:auto;
+
+    scroll-snap-type:x mandatory;
+}
+
+.artTrack{
+    display:flex;
+    gap:25px;
+}
+
+.artCard{
+    min-width:500px;
+    
+    height: 700px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    scroll-snap-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.artCard img{
+    width:100%;
+    height:580px;
+    object-fit:cover;
+}
+
+.artInfo{
+    padding:15px;
+}
+
+.artInfo h3{
+    color:#7A008A;
+}
+
+
+/* ================= CATEGORY BOX ================= */
+
+.categoryBox{
+    background:rgba(255,255,255,.95);
+
+    margin:20px;
+    padding:10px 15px;
+
+    border-radius:20px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.categoryTitle{
+    color:#7A008A;
+
+    margin:15px; 
+
+    white-space: nowrap;
+
+    font-size:28px;
+}
+
+.artNavbar{
+    margin:0;
+
+    flex:1;
+}
+
+.artNavbar{
+    margin:0;
+}
+
+/* ================= HEARTWORKS NAVBAR ================= */
+
+.artNavbar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:0;
+}
+
+.artNavbar button{
+    background:#7A008A;
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+    font-size:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.artNavbar button:hover{
+    background:pink;
+    color:purple;
+}
+
+
+
+/* ================= HEARTWORKS SECTIONS ================= */
+.artNavbar button{
+    background:#7A008A;
+    color:white;
+
+    border:none;
+    padding:8px 14px;
+    font-size:14px;
+
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.artNavbar button:hover{
+    background:pink;
+    color:purple;
+}
+
+
+#allBtn{
+    background:white;
+    color:#7A008A;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+
+.artBtn.active{
+    background:lightblue !important;
+    color:purple !important;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.artSection{
+    display:none;
+}
+
+#anime{
+    display:block;
+}
+
+/* ================= GALLERY GRID ================= */
+
+.artGallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:15px;
+}
+
+.artGallery img{
+    width:420px;
+    height:450px;
+
+    object-fit: contain;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.artGallery img:hover{
+    transform:scale(1.05);
+
+    box-shadow:0 0 15px pink;
+}
+
+/* ================= GENERAL IMAGES ================= */
+
+.main img,
+.main2 img{
+    border-radius:10px;
+    margin:5px;
+    transition:.3s;
+}
+
+.main img:hover,
+.main2 img:hover{
+    transform:scale(1.05);
+}
+
+/* ================= VIDEOS ================= */
+
+video{
+    width:270px;
+    max-width:80%;
+
+    border-radius:10px;
+
+    margin:10px;
+}
+
+/* ================= SONGS ================= */
+
+.songRow{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+.songCard{
+    width:250px;
+
+    text-align:center;
+
+    background:skyblue;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.songCard img{
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+.songName{
+    margin:10px 0;
+
+    background:linear-gradient(
+        135deg,
+        #7A008A,
+        #C46CFF
+    );
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+}
+
+.songCard audio{
+    width:100%;
+}
+
+/* ================= PROFILE PIC ================= */
+
+.profilepic{
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    float:right;
+
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+/* ================= LINKS ================= */
+
+a{
+    color:#7A008A;
+}
+
+a:hover{
+    color:hotpink;
+}
+
+/* ================= FOOTER ================= */
+
+#footer{
+    background:purple;
+
+    color:white;
+
+    text-align:center;
+
+    margin:15px;
+
+    padding:20px;
+
+    border-radius:15px;
+}
+
+#footer a{
+    color:pink;
+}
+
+#footer a:hover{
+    color:white;
+}
